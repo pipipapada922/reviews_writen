@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review"
+  short_description: "Verify X claims, then write bilingual comments."
+  default_prompt: "Check the X post for factuality and recency, then write English comments under 280 chars with Chinese translations in multiple styles."
