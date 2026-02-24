@@ -1,4 +1,4 @@
----
+ï»¿---
 name: review
 description: Verify and deconstruct X (Twitter) posts before drafting bilingual comments. Use when the user provides an X post URL and asks for background search, factuality and recency checks, exaggeration/marketing analysis, and English comments (max 280 chars) with Chinese translations in specific styles.
 ---
@@ -26,25 +26,32 @@ Follow these steps in order.
 - Check whether the post is recent and relevant to current timeline.
 - Identify whether claims are accurate, outdated, incomplete, marketing-heavy, or exaggerated.
 - Flag uncertainty explicitly. Do not guess.
+- Use lightweight comparative verification first. Prioritize major factual direction and key numbers.
+- Do not over-focus on wording nuances unless the claim is high-risk, clearly misleading, or materially changes meaning.
 
 3. Write a short Chinese deconstruction, not only fact-checking.
 - Cover these points in plain language:
   - What is factually supported.
   - What could be over-interpreted.
   - What the post is trying to frame.
-  - `¿ÉÒÔÀí½âÎª...`
-  - `¿ÉÄÜºÍ...ÓĞ¹Ø`
-  - `¹ØÓÚÕâ¸ö»°Ìâ£¬ÈËÃÇ¹ØĞÄµÄµãÔÚÓÚ...`
+  - `å¯ä»¥ç†è§£ä¸º...`
+  - `å¯èƒ½å’Œ...æœ‰å…³`
+  - `å…³äºè¿™ä¸ªè¯é¢˜ï¼Œäººä»¬å…³å¿ƒçš„ç‚¹åœ¨äº...`
 
 4. Draft bilingual comments.
 - Write English comments first.
 - Under each English comment, add a Chinese translation.
 - Keep each English comment under 280 characters.
 - Do not use quotation marks in generated comments.
+- Do not use colons in generated comments.
+- Keep normal punctuation in all other cases. Do not remove natural punctuation marks.
 - Keep language direct, natural, concise, and sharp.
 - Keep tone objective, calm, grounded, and practical.
 - Make the comments read like real X replies from a human perspective.
 - In English, allow light human connectors when natural, such as well, honestly, or to be fair. Keep it subtle.
+- Avoid heavy technical jargon. Write like a native social media user.
+- Integrate facts into opinion directly. Do not sound like an editor doing line-by-line correction.
+- Avoid inflated big words and hype framing.
 
 ## Comment Style Requirements
 
@@ -59,39 +66,44 @@ Additional constraints:
 - Avoid dramatic or exaggerated wording.
 - Avoid heavy metaphors and decorative phrasing.
 - Prefer verifiable details when available: date, location, mission, paper, official source.
+- Keep wording simple enough for general social media readers.
+- Express views directly and naturally instead of correction-style commentary.
+- Avoid quotation marks and colons in generated comments.
+- Normal punctuation is allowed and encouraged for readability.
+- If the content of the post is basically correct and no suspicion of exaggeration, do not deliberately deny or find fault
 
 ## Output Format
 
 Use this structure unless the user asks otherwise.
 
 ```text
-[ÄÚÈİ·ÖÎö]
+[å†…å®¹åˆ†æ]
 - ...
 - ...
-- ¿ÉÒÔÀí½âÎª...
-- ¿ÉÄÜºÍ...ÓĞ¹Ø
-- ¹ØÓÚÕâ¸ö»°Ìâ£¬ÈËÃÇ¹ØĞÄµÄµãÔÚÓÚ...
+- å¯ä»¥ç†è§£ä¸º...
+- å¯èƒ½å’Œ...æœ‰å…³
+- å…³äºè¿™ä¸ªè¯é¢˜ï¼Œäººä»¬å…³å¿ƒçš„ç‚¹åœ¨äº...
 
-[ÆÀÂÛ·½°¸]
-Comment 1£¨ÊÂÊµºË²é°æ£©:
+[è¯„è®ºæ–¹æ¡ˆ]
+Comment 1ï¼ˆäº‹å®æ ¸æŸ¥ç‰ˆï¼‰:
 <EN <= 280>
 CN:
-<ÖĞÎÄ·­Òë>
+<ä¸­æ–‡ç¿»è¯‘>
 
-Comment 2£¨¿ÆÆÕ°æ£©:
+Comment 2ï¼ˆç§‘æ™®ç‰ˆï¼‰:
 <EN <= 280>
 CN:
-<ÖĞÎÄ·­Òë>
+<ä¸­æ–‡ç¿»è¯‘>
 
-Comment 3£¨ÄÚÈİ½ÃÕı°æ£©:
+Comment 3ï¼ˆå†…å®¹çŸ«æ­£ç‰ˆï¼‰:
 <EN <= 280>
 CN:
-<ÖĞÎÄ·­Òë>
+<ä¸­æ–‡ç¿»è¯‘>
 
-Comment 4£¨Éú»îÂäµØ°æ£©:
+Comment 4ï¼ˆç”Ÿæ´»è½åœ°ç‰ˆï¼‰:
 <EN <= 280>
 CN:
-<ÖĞÎÄ·­Òë>
+<ä¸­æ–‡ç¿»è¯‘>
 
 Sources:
 - <url>
@@ -101,9 +113,10 @@ Sources:
 ## Quality Checks
 
 Before finalizing, ensure:
-- Every key claim traces to a source or is marked uncertain.
 - Every English comment is <= 280 characters.
-- No generated comment contains quotation marks.
+- No generated comment contains quotation marks or colons.
+- Other punctuation remains natural and readable.
 - Chinese translations preserve meaning and tone.
 - Analysis is brief but interpretive, not a raw fact list.
 - Wording is grounded, fluent, natural, and non-exaggerated.
+- Comments do not read like technical copy editing or fact-check reports.
