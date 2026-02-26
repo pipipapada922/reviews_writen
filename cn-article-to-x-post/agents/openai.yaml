@@ -1,0 +1,3 @@
+display_name: CN Article to X Post
+short_description: Rewrite CN links into English X posts.
+default_prompt: Turn a Chinese article URL into concise, high-engagement English X content with verified @mentions and exactly 3 hashtags.
