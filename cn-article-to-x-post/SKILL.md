@@ -35,6 +35,8 @@ Mimic broad writing patterns from top AI/tech X creators without copying any ind
 - Create three hook options with different angles.
 - Create one final main post (<= 280 chars).
 - Create one thread with 3-6 replies (each <= 280 chars).
+- Prefer sentence structures without colons whenever possible.
+- Write thread replies as complete sentences and coherent short paragraphs, not fragments.
 - Add relevant `@mentions` in main post and/or thread where natural.
 - Append exactly 3 hashtags at the end of the main post and thread final reply.
 - Create three optional CTA endings.
@@ -43,6 +45,8 @@ Mimic broad writing patterns from top AI/tech X creators without copying any ind
 - Verify all claims map back to extracted facts.
 - Ensure fluent native English and X-native rhythm.
 - Avoid overhype and generic buzzwords.
+- Minimize colon usage across all outputs unless a colon is clearly necessary.
+- Ensure comment-like thread replies read as full sentences with clear subject and verb.
 - Keep exactly 3 hashtags total in each final publishable variant.
 - Avoid hashtags/emojis unless user explicitly asks, except the mandatory 3 hashtags rule when requested.
 
