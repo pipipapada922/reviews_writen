@@ -37,7 +37,9 @@ Mimic broad writing patterns from top AI/tech X creators without copying any ind
 - Create one thread with 3-6 replies (each <= 280 chars).
 - Include one short Bohrium academic-question reply inside the thread.
 - This reply must contain one content-related research question plus one Bohrium link.
-- Use Bohrium search URL format `https://www.bohrium.com/en/search?q=<urlencoded keywords>`.
+- Use Bohrium prefilled AI Search URL format `https://www.bohrium.com/ai-search/home?keyword=<urlencoded question>&autoSearch=true`.
+- The link must preserve the original Bohrium search interface with the question prefilled.
+- Do not use links that require login to view the page.
 - Prefer sentence structures without colons whenever possible.
 - Write thread replies as complete sentences and coherent short paragraphs, not fragments.
 - Add relevant `@mentions` in main post and/or thread where natural.
@@ -50,7 +52,7 @@ Mimic broad writing patterns from top AI/tech X creators without copying any ind
 - Avoid overhype and generic buzzwords.
 - Minimize colon usage across all outputs unless a colon is clearly necessary.
 - Ensure comment-like thread replies read as full sentences with clear subject and verb.
-- Verify the Bohrium link is valid and the query keywords match the designed research question.
+- Verify the Bohrium link opens without login prompt in a fresh session and the question text in `keyword` matches the designed research question.
 - Keep exactly 3 hashtags total in each final publishable variant.
 - Avoid hashtags/emojis unless user explicitly asks, except the mandatory 3 hashtags rule when requested.
 
