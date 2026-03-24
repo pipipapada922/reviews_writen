@@ -1,4 +1,4 @@
 interface:
-  display_name: "Review"
-  short_description: "Verify X claims, then write bilingual comments."
-  default_prompt: "Check the X post for factuality and recency, then write English comments under 280 chars with Chinese translations in multiple styles."
+  display_name: "Review Decoder"
+  short_description: "Deconstruct X posts and draft human-sounding bilingual reply versions."
+  default_prompt: "Use $review-decoder to deconstruct this X post and generate 3-5 adaptive English reply versions with Chinese translations, grounded in evidence and natural tone."
